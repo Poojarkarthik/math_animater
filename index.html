@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Animation Generator</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Math Visualizer 📐</h1>
+    <p>Enter a math topic below to see it visualized.</p>
+    <p><b>Try:</b> "pythagoras", "unit circle", "slope", "sine wave", "parabola", "circle area", "reflection"</p>
+
+    <div class="input-container">
+        <label for="topicInput">Topic:</label>
+        <input type="text" id="topicInput" placeholder="e.g., sine wave">
+        <button id="createBtn">Explain & Animate</button>
+    </div>
+    
+    <div class="container">
+        <canvas id="animationCanvas" width="600" height="450"></canvas>
+        <div id="explanationBox">
+            <p class="placeholder">Explanation from the API will appear here...</p>
+        </div>
+    </div>
+    
+    <div>
+        <button id="downloadBtn" disabled>Download Video</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
